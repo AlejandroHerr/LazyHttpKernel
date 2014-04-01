@@ -11,7 +11,7 @@ class LazyHttpKernel implements HttpKernelInterface
     private $factory;
     private $app;
 
-    public function __construct(callable $factory)
+    public function __construct($factory)
     {
         $this->factory = $factory;
     }
